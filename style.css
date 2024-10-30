@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+/* nav ul li a {
+    text-decoration: none;
+    color: #333;
+} */
+
+nav ul li a.active {
+    color: #e63946;
+}
+
+.get-started {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #333; 
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact-section h2::before,
+.contact-section h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px; /* Length of the red line */
+    height: 2px;
+    background-color: #e63946; /* Red color */
+}
+
+.contact-section h2::before {
+    left: -70px; /* Adjust based on spacing */
+}
+
+.contact-section h2::after {
+    right: -70px; /* Adjust based on spacing */
+}
+.contact-section h2 {
+    font-size: 32px;
+    color: #333; /* Dark gray color */
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.contact-section h2::before,
+.contact-section h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px; /* Length of the red line */
+    height: 2px;
+    background-color: #e63946; /* Red color */
+}
+
+.contact-section h2::before {
+    left: -50px; /* Adjust based on spacing */
+}
+
+.contact-section h2::after {
+    right: -50px; /* Adjust based on spacing */
+}
+
+.contact-section p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-gap: 20px; /* 20px gap between rows and columns */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* .info-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+} */
+
+.info-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 300px;
+}
+.contact-info img{
+    height: 60px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    background-color: #e63946;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #060000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #555;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-links ul li a:hover {
+    color: #555;
+}
+
+.footer-bottom {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: red;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
